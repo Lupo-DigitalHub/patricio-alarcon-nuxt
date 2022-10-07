@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Arboria-Book';
+  src: url('~/assets/fonts/Arboria-Book.woff2') format('woff2'),
+      url('~/assets/fonts/Arboria-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arboria-Light';
+  src: url('~/assets/fonts/Arboria-Light.woff2') format('woff2'),
+      url('~/assets/fonts/Arboria-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arboria-Bold';
+  src: url('~/assets/fonts/Arboria-Bold.woff2') format('woff2'),
+      url('~/assets/fonts/Arboria-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('~/assets/fonts/CenturyGothic-Bold.woff2') format('woff2'),
+      url('~/assets/fonts/CenturyGothic-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arboria-Medium';
+  src: url('~/assets/fonts/Arboria-Medium.woff2') format('woff2'),
+      url('~/assets/fonts/Arboria-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
