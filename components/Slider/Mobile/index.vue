@@ -4,8 +4,7 @@
       id="sliderlMobile"
       v-model="slide"
       :interval="7000"
-      img-width="428"
-      img-height="926"
+
       indicators
       controls
       background="#ababab"
@@ -27,10 +26,10 @@
         <div class="caption-text m-5">
           Para scootear gratis, llena el siguiente formulario
         </div>
-        <b-button v-b-modal.contact-form-cupon variant="danger">
+        <b-button v-b-modal.contact-form-cupon-mob variant="danger">
           Obtener mi cupón
         </b-button>
-        <b-modal id="contact-form-cupon" size="xl" hide-footer hide-header>
+        <b-modal id="contact-form-cupon-mob" size="xl" hide-footer hide-header>
           <contact-form />
         </b-modal>
       </b-carousel-slide>

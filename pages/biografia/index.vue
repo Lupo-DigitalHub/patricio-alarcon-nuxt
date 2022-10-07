@@ -48,8 +48,30 @@ export default {
       url: this.$config.imageURL
     }
   },
+  head () {
+    return {
+      title: 'Movilidad para Quito con Paticio Alarcón',
+      meta: [
+        {
+          hid: 'title',
+          name: 'title',
+          content: this.section.title
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.section.description
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.section.title
+        }
+      ]
+    }
+  },
   async created () {
-    const response = await this.$axios.$get('/landing_patricio_alarcon?fields[]=bio_title,bio,bio_image,projects,goal,goal_image')
+    const response = await this.$axios.$get('/landing_patricio_alarcon?fields[]=title,description,bio_title,bio,bio_image,projects,goal,goal_image')
     this.section = response.data
     this.loading = false
   }
