@@ -23,7 +23,7 @@
         >
           Desarrollado por
           <img src="~/assets/img/logo-lupo.svg" alt="Lupo Digital Hub">
-          2021
+          2022
         </a>
       </div>
     </footer>

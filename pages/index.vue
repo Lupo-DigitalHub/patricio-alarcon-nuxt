@@ -33,7 +33,7 @@
         </b-row>
       </b-container> -->
       <div class="d-flex justify-content-center align-items-center">
-        <b-img src="~/assets/img/bandera-slogan.png" class="img-fluid" />
+        <b-img src="~/assets/img/Slogan-PA-de-frente.png" class="img-fluid" />
       </div>
     </b-container>
   </div>
