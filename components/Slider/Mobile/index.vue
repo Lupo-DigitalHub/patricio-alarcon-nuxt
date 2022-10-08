@@ -24,10 +24,10 @@
         img-src="~/assets/img/Movilidad-para-Quito-3-m.jpg"
       >
         <div class="caption-text m-5">
-          Para scootear gratis, llena el siguiente formulario
+          Para scootear <span class="text-danger">GRATIS</span>, llena el siguiente formulario
         </div>
         <b-button v-b-modal.contact-form-cupon-mob variant="danger">
-          Obtener mi cupón
+          Cupón Gratis
         </b-button>
         <b-modal id="contact-form-cupon-mob" size="xl" hide-footer hide-header>
           <contact-form />

@@ -101,9 +101,15 @@
   </div>
   <div v-else>
     <b-container fluid class="modal-cupon-bg mx-0 px-0 text-center d-flex align-items-center flex-column align-content-center justify-content-center">
-      <h4 class="form-title text-center">Gracias por llenar tus datos</h4>
-      <div class="cupon-text my-3">Este es tu cupón:</div>
+      <h4 class="form-title text-center">Ahora puedes movilizarte GRATIS</h4>
+      <div class="cupon-text my-3">Movilízate por Quito de manera sostenible con Moveo.</div>
+      <div class="cupon-text my-3">Copia y guarda tu código:</div>
       <div><span class="cupon-txt"> {{ cuponResponse[0].code }} </span></div>
+      <div class="cupon-text my-3">Descarga la app aquí:</div>
+      <div class="d-flex flex-row">
+        <a href="https://apps.apple.com/ec/app/moveo/id1576607900" target="_blank"><b-img src="~/assets/img/app-store-logo1.png" /></a>
+        <a href="https://play.google.com/store/apps/details?id=moveo.app" target="_blank"><b-img src="~/assets/img/play-store-logo2.png" /></a>
+      </div>
     </b-container>
   </div>
 </template>
@@ -134,7 +140,7 @@ export default {
     },
     async onSubmit () {
       try {
-        const responseForm = await this.$axios.$post('/test_forms', this.form,
+        const responseForm = await this.$axios.$post('/leads_scooters', this.form,
           {
             headers: { 'Content-Type': 'application/json' }
           })
