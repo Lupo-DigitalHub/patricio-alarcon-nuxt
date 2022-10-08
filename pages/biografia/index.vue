@@ -2,7 +2,7 @@
 <loader v-if="loading" />
   <b-container v-else fluid class="bg-gray-pa mx-0 px-0">
     <b-container class="p-5 container-bio">
-      <b-row>
+      <b-row cols="1" cols-sm="1" cols-md="1" cols-lg="2" cols-xl="2">
         <b-col>
           <b-img :src="`${url}/${section.bio_image}`" class="w-100 img-fluid" />
         </b-col>
@@ -20,6 +20,10 @@
       </b-container>
       <b-row>
         <b-col
+          sm="12"
+          md="12"
+          lg="12"
+          xl="12"
           v-for="(item, indexProjects) in section.projects"
           :key="indexProjects"
           class="border rounded mx-3 p-3 project-box"

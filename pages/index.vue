@@ -3,7 +3,7 @@
     <loader v-if="loading" />
     <b-container v-else fluid class="mx-0 px-0">
       <b-img :src="`${url}/${section.banner}`" class="w-100 img-fluid" />
-      <b-container class="my-3">
+      <!-- <b-container class="my-3">
         <h1 class="name-title text-center">
           {{ section.title_scooter }}
         </h1>
@@ -31,7 +31,7 @@
             />
           </b-col>
         </b-row>
-      </b-container>
+      </b-container> -->
       <div class="d-flex justify-content-center align-items-center">
         <b-img src="~/assets/img/bandera-slogan.png" class="img-fluid" />
       </div>
@@ -40,13 +40,11 @@
 </template>
 <script>
 import Loader from '~/components/Loader'
-import ContactForm from '~/components/Form'
 
 export default {
   name: 'IndexPage',
   components: {
-    Loader,
-    ContactForm
+    Loader
   },
   layout: 'default',
   data () {
