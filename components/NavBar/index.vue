@@ -1,20 +1,23 @@
 <template>
   <b-navbar toggleable="lg" class="nav-bar ps-5">
-    <b-navbar-brand to="/" class="text-center w-25">
+    <!-- <b-navbar-brand to="/" class="text-center w-25">
       <b-img
         src="~/assets/img/logo-pa5.png"
         alt="logo"
         class="img-fluid w-25"
       />
-    </b-navbar-brand>
+    </b-navbar-brand> -->
 
     <b-navbar-toggle target="nav-collapse" text="Menu" class="w-100" />
     <b-collapse
       id="nav-collapse"
       is-nav
-      class="menu-text"
+      class="menu-text justify-content-end w-50"
     >
       <b-navbar-nav id="nav-collapse" is-nav>
+        <b-nav-item href="/" class="menu-item">
+          Inicio
+        </b-nav-item>
         <b-nav-item href="biografia" class="menu-item">
           ¿Quién es Patricio Alarcón?
         </b-nav-item>
