@@ -32,7 +32,16 @@
         <span>/PatoAlarcon2023</span>
       </div>
     </div>
-    <b-modal id="pulpo-game-movil" class="modal__pulpo" size="xl" hide-footer hide-header>
+    <b-modal
+    ref="pulpo-game-movil"
+    id="pulpo-game-movil"
+    class="modal__pulpo"
+    size="xl"
+    hide-footer
+    hide-header>
+      <div @click="hideModal" class="close__button">
+        <img src="images/close-ico.svg" alt="">
+      </div>
       <PulpoGame />
     </b-modal>
   </header>
@@ -49,6 +58,11 @@ export default {
       swiper: {}
     }
   },
+  methods: {
+    hideModal () {
+      this.$refs['pulpo-game-movil'].hide()
+    }
+  },
   mounted () {
     this.swiper = new Swiper('.swiper__header', {
       effect: 'fade',
@@ -61,6 +75,16 @@ export default {
 </script>
 
 <style lang="scss">
+.close__button{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  cursor: pointer;
+}
+.close__button img{
+  width: 4rem;
+}
 .arrowmovil__header{
   width: 100%;
   position: absolute;
