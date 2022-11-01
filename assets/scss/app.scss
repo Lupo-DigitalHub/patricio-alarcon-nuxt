@@ -3,10 +3,28 @@
 @import "variables";
 @import "select";
 
+html {
+  scroll-behavior: smooth;
+  font-size: calc(100vw / 1920 * 10);
+  line-height: 1;
+}
+@media (max-width: 767px) {
+  html {
+    font-size: calc(100vw / 750 * 10);
+  }
+}
 body {
   color: #767676;
-  font-family: 'Arboria-Book' !important;
+  font-family: "Arboria-Book" !important;
   // height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
 }
 .name-title {
   color: #0c22c1;
@@ -19,7 +37,6 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-
 }
 @media only screen and (min-width: 992px) {
   .display-lc-section {
@@ -32,30 +49,25 @@ body {
   .display-lc-header-mobile {
     display: none !important;
   }
-
 }
-
-
 
 /* Large devices (laptops/desktops, 1960px and up) */
 @media only screen and (min-width: 1960px) {
-
   .display-lc-header {
     display: block !important;
   }
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 
 /*animated scroll*/
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 2s all ease;
 }
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }

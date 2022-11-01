@@ -8,14 +8,14 @@
         justify-content-center
         align-items-center
         flex-wrap
-        p-3
+        p-5
         mb-auto
       "
     >
-      <div class="text-white">
-        Derechos Reservados -
-      </div>
-      <div>
+      <span class="text-white">
+        Derechos Reservados&nbsp;-&nbsp;
+      </span>
+      <span>
         <a
           href="https://www.lupodigitalhub.com/"
           class="footer__lupo"
@@ -25,7 +25,7 @@
           <img src="~/assets/img/logo-lupo.svg" alt="Lupo Digital Hub">
           2022
         </a>
-      </div>
+      </span>
     </footer>
   </div>
 </template>
@@ -38,23 +38,31 @@ export default {
 @import "@/assets/scss/variables";
 
 footer {
-  background-color: $primary-blue;
-}
-footer a:hover {
-  color: gray;
+  background-color: #061181;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-top: 10rem;
 }
 .footer__lupo {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
   font-weight: 300;
-  padding: 0.5rem;
   /* background-color: #1d1d1d; */
   color: #ffffff;
 }
 .footer__lupo img {
   width: 2rem;
   margin: 0 1rem;
+}
+@media (max-width: 767px) {
+  footer {
+    font-size: 3rem;
+  }
+  .footer__lupo img {
+    width: 5rem;
+    margin: 0 1rem;
+  }
+
 }
 </style>

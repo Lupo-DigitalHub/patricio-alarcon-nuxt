@@ -24,6 +24,7 @@
     "core-js": "^3.25.3",
     "nuxt": "^2.15.8",
     "nuxt-mail": "^3.0.23",
+    "swiper": "^8.4.4",
     "vee-validate": "3.4.14",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",

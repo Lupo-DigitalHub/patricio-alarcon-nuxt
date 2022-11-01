@@ -1,5 +1,5 @@
 <template>
-  <div v-if="show" class="modal-cupon-bg">
+  <div v-if="show" class="form__section modal-cupon-bg">
     <b-container>
       <h4 class="form-title text-center">Estás a un solo paso de obtener tu cupón</h4>
     </b-container>
@@ -100,7 +100,7 @@
     </validation-observer>
   </div>
   <div v-else>
-    <b-container fluid class="modal-cupon-bg mx-0 px-0 text-center d-flex align-items-center flex-column align-content-center justify-content-center">
+    <b-container fluid class="modal-cupon-bg mx-0 px-0 text-center d-flex align-items-center flex-column align-content-center justify-content-center p-5">
       <h4 class="form-title text-center">Ahora puedes movilizarte GRATIS</h4>
       <div class="cupon-text my-3">Movilízate por Quito de manera sostenible con Moveo.</div>
       <div class="cupon-text my-3">Copia y guarda tu código:</div>
@@ -159,13 +159,29 @@ export default {
 legend {
   color: #FFF !important;
   font-weight: bold;
+}
+.form__section {
+  height: 70rem !important;
+  font-size: 2rem;
+  border-radius: 5rem;
+  input{
+    font-size: 2rem;
   }
+  select{
+    font-size: 2rem;
+  }
+  button{
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+}
 .form-title {
     font-family: 'Arboria-Bold';
     color: #FFF;
     font-size: 2rem;
     line-height: 2rem;
     text-transform: uppercase;
+    margin: 2rem 0;
     // padding: 1rem;
 }
 .modal-cupon-bg{
@@ -176,6 +192,8 @@ legend {
   // height: 55vh;
   height: fit-content;
   padding: 2rem;
+  height: 70rem !important;
+
 }
 .cupon-text{
   color: #FFF;
@@ -186,13 +204,14 @@ legend {
   font-weight: bold;
   background-color: $primary-red;
   padding: 1rem;
+  font-size: 3rem;
 }
 @media only screen and (min-width: 768px) {
   .form-title {
     font-family: 'Arboria-Bold';
     color: #FFF;
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
     text-transform: uppercase;
     // padding: 1rem;
 }
@@ -206,5 +225,36 @@ legend {
   background-color: $primary-red;
   padding: 1rem;
 }
+}
+@media (max-width: 767px) {
+  .form__section {
+    height: auto !important;
+    font-size: 3.5rem;
+    border-radius: 5rem;
+    padding: 6rem 3rem;
+    input{
+      font-size: 3.5rem;
+    }
+    select{
+      font-size: 3.5rem;
+    }
+    button{
+      font-size: 3.5rem;
+      margin-top: 1rem;
+    }
+  }
+  .form-title {
+    font-size: 5rem;
+    line-height: 1;
+  }
+  .cupon-text{
+    font-size: 4rem;
+  }
+  .cupon-txt{
+    font-size: 4.3rem;
+  }
+  .modal-cupon-bg{
+    height: auto !important;
+  }
 }
 </style>

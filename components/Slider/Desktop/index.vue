@@ -19,7 +19,7 @@
         <div class="caption-text m-5">
           Para scootear gratis, llena el siguiente formulario
         </div>
-        <b-button v-b-modal.contact-form-cupon-desk variant="danger">
+        <b-button class="button__modal" v-b-modal.contact-form-cupon-desk variant="danger">
           Obtener mi cupón
         </b-button>
         <b-modal id="contact-form-cupon-desk" size="xl" hide-footer hide-header>
@@ -84,6 +84,9 @@ export default {
   }
 }
 @media only screen and (min-width: 768px) {
+  .button__modal{
+    font-size: 3rem;
+  }
   #carouselDesk {
   .carousel-caption {
     position: absolute;
