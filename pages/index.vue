@@ -4,7 +4,7 @@
     <HeaderMovilComponent class="d-md-none" />
     <BannerPatricio />
     <QuienEs />
-    <Proyectos />
+    <Conectada />
     <Info />
     <Movilidad />
     <FooterComponent />
@@ -15,7 +15,8 @@ import HeaderComponent from '@/components/Header'
 import HeaderMovilComponent from '@/components/HeaderMovil'
 import BannerPatricio from '@/components/BannerPatricio'
 import QuienEs from '@/components/QuienEs'
-import Proyectos from '@/components/Proyectos'
+import Conectada from '@/components/Conectada'
+// import Proyectos from '@/components/Proyectos'
 import Info from '@/components/Info'
 import Movilidad from '@/components/Movilidad'
 import FooterComponent from '@/components/Footer'
@@ -28,7 +29,8 @@ export default {
     HeaderMovilComponent,
     BannerPatricio,
     QuienEs,
-    Proyectos,
+    // Proyectos,
+    Conectada,
     Info,
     Movilidad,
     FooterComponent
