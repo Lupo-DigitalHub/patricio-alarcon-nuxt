@@ -2,7 +2,8 @@
   <section class="game__section">
     <iframe
     frameborder="0"
-    src="https://itch.io/embed-upload/7016078?color=000000"
+    src="https://itch.io/embed-upload/7140335
+?color=000000"
     allowfullscreen=""
   >
     <a href="https://pattodiablo.itch.io/alarcon-vs-pulporruptor">Play Patricio Alarcón Vs Pulporruptor on itch.io</a>
